@@ -10,8 +10,8 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot that answ
 
 ## Model Choices
 
-- **Language Model (LLM)**: `google/flan-t5-large` from Hugging Face, suitable for QA tasks
-- **Embedding Model**: `sentence-transformers/all-MiniLM-L6-v2` from Sentence Transformers, optimized for fast and accurate text embeddings
+- **Language Model (LLM)**: `google/flan-t5-large`
+- **Embedding Model**: `sentence-transformers/all-MiniLM-L6-v2`
 
 ## Setup and Installation
 
@@ -63,28 +63,19 @@ python qa_bot.py
 3. Vector Store: Chroma is used to store and retrieve embeddings of text chunks.
 4. Question-Answering: Combines retrieved document context with the LLM to generate answers.
 
-<figure style="text-align: center;">
-    <img src="doc_embedding.png" alt="A beautiful sunrise">
-    <figcaption>
-        Documents embedding and VectorStore
-        <br>
-        <a href="https://python.langchain.com/docs/tutorials/rag/" style="font-size: 0.6em; color: gray; text-decoration: none;">
-            Source: Langchain
-        </a>
-    </figcaption>
-</figure>
+<div style="text-align: center; margin-top: 30px;">
+  <img src="images/doc_embedding.png" alt="embeddings_vectorStore" style="width:70%; margin: 0 auto; display: block;"/>
+  <h3 style="margin: 2px 0;">Documents embedding and VectorStore</h3>
+  <p style="margin: 2px 0;"><a href="https://python.langchain.com/docs/tutorials/rag/" target="_blank">Source: Langchain</a></p>
+</div>
 
-<figure style="text-align: center;">
-    <img src="rag.png" alt="A beautiful sunrise">
-    <figcaption>
-        RAG Flow
-        <br>
-        <a href="https://python.langchain.com/docs/tutorials/rag/" style="font-size: 0.6em; color: gray; text-decoration: none;">
-            Source: Langchain
-        </a>
-    </figcaption>
-</figure>
+<br />
 
+<div style="text-align: center; margin-top: 30px;">
+  <img src="images/rag.png" alt="rag" style="width:70%; margin: 0 auto; display: block;"/>
+  <h3 style="margin: 2px 0;">RAG Flow</h3>
+  <p style="margin: 2px 0;"><a href="https://python.langchain.com/docs/tutorials/rag/" target="_blank">Source: Langchain</a></p>
+</div>
 
 ## Requirements
 
