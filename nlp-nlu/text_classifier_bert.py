@@ -19,9 +19,9 @@ class BertTextClassifier:
         """
         Tokenize and encode dataset
 
-        :param text: Input data
+        :param text: Input datasets
         :param label: Class label
-        :return: preprocessed data
+        :return: preprocessed datasets
         """
         tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         input_ids = tokenizer.encode(text.numpy().decode("utf-8"), add_special_tokens=True, max_length=512)
@@ -43,10 +43,10 @@ class BertTextClassifier:
         return input_ids, label
 
     def data_preprocessing(self, data, shuffle: bool = False):
-        # encoded_data = data.map(self.text_encoder, num_parallel_calls=tf.data.experimental.AUTOTUNE)
+        # encoded_data = datasets.map(self.text_encoder, num_parallel_calls=tf.datasets.experimental.AUTOTUNE)
         encoded_data = data.map(self.encode_examples, num_parallel_calls=tf.data.experimental.AUTOTUNE)
         #if shuffle:
-        #    return encoded_data.shuffle(1000).batch(32).prefetch(tf.data.experimental.AUTOTUNE)
+        #    return encoded_data.shuffle(1000).batch(32).prefetch(tf.datasets.experimental.AUTOTUNE)
         #else:
         return encoded_data.batch(32).prefetch(tf.data.experimental.AUTOTUNE)
 
@@ -71,7 +71,7 @@ class BertTextClassifier:
 
         model = self.create_model(learning_rate=leaning_rate, metric_name=metric_name)
         raw_train_data, raw_validation_data = self.load_data()
-        print('****************** load data: Ok ***********************')
+        print('****************** load datasets: Ok ***********************')
 
         preprocessed_train_data = self.data_preprocessing(data=raw_train_data, shuffle=True)
         preprocessed_validation_data = self.data_preprocessing(data=raw_validation_data)
