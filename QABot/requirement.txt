@@ -1,0 +1,11 @@
+huggingface_hub==0.26.2
+torch==2.5.1
+langchain==0.3.7 
+langchain-community==0.3.7
+langchain-core==0.3.18 
+langchain-huggingface==0.1.2
+chromadb==0.5.18 
+gradio==5.5.0 
+sentence-transformers==3.3.0 
+tqdm==4.67.0 
+transformers==4.46.2
