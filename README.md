@@ -1,9 +1,17 @@
-# nlp
+# NLP
 
-## Ressources
+## Courses
 
-- Bert Tokenizer
-  - [https://www.analyticsvidhya.com/blog/2021/09/an-explanatory-guide-to-bert-tokenizer/](https://www.analyticsvidhya.com/blog/2021/09/an-explanatory-guide-to-bert-tokenizer/)
-- SBERT
-  - SentenceTransformers: State-of-the-art sentence, text and image embeddings
-    - [https://sbert.net/docs/pretrained_models.html#model-overview](https://sbert.net/docs/pretrained_models.html#model-overview)
+- [Huggingface nlp course](https://huggingface.co/learn/nlp-course/chapter1/1)
+- [Stanford CS224N - Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/)
+
+## Libraries
+
+- [Stanza](https://stanfordnlp.github.io/stanza/)
+- [spaCy](https://spacy.io/)
+- [Natural Language Toolkit (NLTK)](https://www.nltk.org/)
+- [Gensim](https://radimrehurek.com/gensim/)
+- [TextBlob](https://textblob.readthedocs.io/en/dev/)
+- [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/)
+- [Huggingface transformers](https://huggingface.co/docs/transformers/index)
+- [SentenceTransformers](https://www.sbert.net/)

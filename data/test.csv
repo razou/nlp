@@ -1,0 +1,11 @@
+text, true_label
+"This product is amazing! I love how well it works.", 1
+"The customer service was terrible, I want my money back.", 0
+"Not sure how I feel about this, it's just okay I guess.", 0
+"Best purchase I've ever made, highly recommend!", 1
+"Completely disappointed with the quality, don't buy this.", 0
+"The shipping was slow and the product is terrible.", 0
+"Really impressed with the features and build quality.", 1
+"Waste of money, doesn't work as advertised.", 0
+"The product exceeded my expectations, fantastic!", 1
+"Great value for money, would buy again!", 1 

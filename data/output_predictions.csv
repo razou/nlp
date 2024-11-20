@@ -1,0 +1,11 @@
+text, true_label,prob_negative,prob_positive,predicted_label
+This product is amazing! I love how well it works.,1,0.005,0.995,positive
+"The customer service was terrible, I want my money back.",0,0.979,0.021,negative
+"Not sure how I feel about this, it's just okay I guess.",0,0.042,0.958,positive
+"Best purchase I've ever made, highly recommend!",1,0.007,0.993,positive
+"Completely disappointed with the quality, don't buy this.",0,0.966,0.034,negative
+The shipping was slow and the product is terrible.,0,0.983,0.017,negative
+Really impressed with the features and build quality.,1,0.009,0.991,positive
+"Waste of money, doesn't work as advertised.",0,0.968,0.032,negative
+"The product exceeded my expectations, fantastic!",1,0.007,0.993,positive
+"Great value for money, would buy again!",1,0.008,0.992,positive
