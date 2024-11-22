@@ -90,6 +90,10 @@ def main():
     trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     logger.info(f"Total parameters: {total_params:,}")
     logger.info(f"Trainable parameters: {trainable_params:,}")
+    logger.info(f"Model Vocabulary size (#Tokens the model can recognize): {model.config.vocab_size:,}")
+    logger.info(f"Hidden size (embedding dimension): {model.config.hidden_size}")
+
+    raise Exception("Stop here")
 
     logger.info("Loading datasets")
 
