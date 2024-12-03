@@ -19,6 +19,9 @@ class TextClassificationPredictor:
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
         
         self.model = self.model.to(self.device)
+        logger.info("Putting model in evaluation mode to disable training-specific ",  
+                    "layers(e.g. dropout, batch normalization, etc.)."
+                    )
         self.model.eval()
         
         self.label_names = self.model.config.id2label
@@ -64,7 +67,6 @@ class TextClassificationPredictor:
                 ["It was okay, nothing special but not terrible either."]
             ]
         )
-        
         return iface
 
 def main():

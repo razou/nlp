@@ -94,8 +94,6 @@ def main():
     logger.info(f"Model Vocabulary size (#Tokens the model can recognize): {model.config.vocab_size:,}")
     logger.info(f"Hidden size (embedding dimension): {model.config.hidden_size}")
 
-    raise Exception("Stop here")
-
     logger.info("Loading datasets")
 
     if config.get('sample_size'):
