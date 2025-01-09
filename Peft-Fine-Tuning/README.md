@@ -45,7 +45,7 @@ python src/train.py \
 - Train details
   - Total params: $251116800$ 
   - Trainable params: $3538944$
-    -  $\rightsquigarrow 1.4\%$ of total parameters.
+    -  $\rightsquigarrow 1.4$% of total parameters.
   - Performances:
     - ROUGE scores computed on 100 random samples from test set:
       |           |Rouge1 |Rouge2 |RougeL |

@@ -162,6 +162,7 @@ cython_debug/
 #Output directories
 outputs/
 flagged/
+peft_model/
 
 #Data files
 *.csv
