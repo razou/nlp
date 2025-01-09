@@ -65,7 +65,7 @@ python src/train.py \
 - Run `inference.py` script
 - Then go to `http://127.0.0.1:7860` for model testing.
   
-- Examples of dialogues
+- Example of dialogues
   - **Example 1**
     ```
     #Person1#: What's the matter with this computer?
